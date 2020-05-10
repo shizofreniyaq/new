@@ -1,0 +1,209 @@
+div {
+	background-color: #202020;
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	margin-left: none;
+	margin-top: none;
+
+}
+
+.e8ae {
+	color: white;
+}
+
+.zxc123 {
+	background-color: #505050;
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	margin-left: 60px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+
+}
+
+p {
+	margin-left: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	margin-top:15px;
+	color: white;
+}
+
+[class^="icon-"], [class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialised;
+
+}
+
+.re {
+	position: absolute;
+	margin-left: 293px;
+	margin-top:15px;
+	color: white;
+
+}
+
+.icon-keyboard-arrow-right::before{
+	content: "\e7c3";
+	position:absolute;
+	margin-left: 256px;
+	padding-top: 18px;
+	color:white;
+
+
+}
+.icon-menu11::before {
+	content:"\e8ae";
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #F5FFFA;
+	font-size: 25px;
+
+
+}
+
+.kkk1 {
+	width: 570px;
+	height: 27px;
+	margin-left: 770px;
+	margin-top: 15px;
+	border-radius: 5px;
+	background-color: #707070;
+	outline: none;
+	border: none;
+	color: white;
+	text-indent: 30px;
+ 	font-family: 'Roboto', sans-serif;
+	
+	
+}
+
+.icon-search8::before {
+ 	content: "\e660";
+	position: absolute; 
+ 	margin-top: 20px;
+ 	margin-left: 780px;
+ 	color: white;
+}
+
+.icon-arrow-drop-down::before {
+	content: "\e8a1";
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 1310px;
+	color: white;
+
+}
+.overlay {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+}
+
+.overlay > label {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	top: 30px;
+	left: 200px;
+	width: 30px;
+	height: 16px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+
+
+.overlay > label::before {
+	content: '';
+	display: block;
+	position: relative;
+	top: 7px;
+	border-top: 2px solid #000;
+}
+
+
+
+.verticalNav {
+	color: black;
+	position: relative;
+	top: -55px;
+	height: 135px;
+	padding: 20px;
+	padding-left: 130px;
+	font-size: 22px;
+	box-sizing: border-box;
+	background-color: #ddd;
+	transition: top 600ms 
+	cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+
+.verticalNav span {
+	display: block;
+	color: #111; 
+}
+
+.verticalNav span:hover {
+	width: 120px;
+	background-color: #fff;
+}
+
+
+#toggle {
+	position: absolute;
+	visibility: hidden;
+}
+
+
+
+#toggle:checked ~ .verticalNav {
+	top: 80px;
+}
+
+
+#toggle:checked ~ .puppies {
+	margin-top: 135px;
+}
+
+
+
+.icon-dashboard2::before {
+	content: "\e61f";
+	position: absolute;
+	color: #F5FFFA;
+	margin-top: 20px;
+	margin-left: 20px;
+
+
+}
+
+
+.icon-credit-card4::before {
+	content: "\e61e";
+	position: absolute;
+	color: #F5FFFA;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+
+.icon-group2::before {
+	content: "\e8d8";
+	position: absolute;
+	color: #F5FFFA;
+	margin-top: 70px;
+	margin-left: 20px;
+}
+
