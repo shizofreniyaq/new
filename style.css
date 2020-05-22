@@ -1,4 +1,4 @@
-div {
+/*div {
 	background-color: #202020;
 	position: absolute;
 	height: 60px;
@@ -207,3 +207,297 @@ p {
 	margin-left: 20px;
 }
 
+*/
+
+
+.header {
+	background-color: #505050;
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+}
+.burger {
+	background: #202020;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+} 
+.burger span {
+	display: block;
+	width: 24px;
+	background: #fff;
+	height: 2px;
+	position: relative;
+	margin:0 auto;
+	cursor: pointer;
+}
+.burger span:before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	top: -6px;
+	display: block;
+	background: #fff;
+}
+.burger span:after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	bottom: -6px;
+	display: block;
+	background: #fff;
+}
+.search {
+	margin-right: 50px;
+	background: #c3c3c3;
+	border-radius: 10px;
+	position: relative;
+	max-width: 570px;
+	height: 30px;
+	margin-left: auto;
+	width: 100%;
+}
+.serch:before {
+
+}
+
+.search::before {
+ 	content: "\e660";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5px;
+	color: white;
+	font-size: 24px;
+	font-family: 'icomoon';
+}
+
+.search::after {
+	content: "\e8a1";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5px;
+	color: white;
+	font-size: 24px;
+	font-family: 'icomoon';
+}
+
+.search input {
+	background: none;
+	padding: 0 35px;
+	border:none;
+	color: #fff;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+}
+.breadcrumbs {
+	padding: 0 20px;
+}
+.breadcrumbs ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.breadcrumbs ul li {
+	display: inline-block;
+	color: #fff;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+}
+.breadcrumbs ul li a {
+	color: #fff;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+.breadcrumbs ul li:first-child:after  {
+	color: #fff;
+	font-size: 14px;
+	margin:0 15px;
+	content: '\e7c3';
+	font-family: 'icomoon';
+}
+
+.icon-keyboard-arrow-right:before {
+	content: "\e7c3";
+	display: block;
+	width: 24px;
+	color: black;
+	height: 15px;
+	position: relative;
+	margin: auto;
+	cursor: pointer;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  color: #232323;
+  
+  transition: color 1s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: fixed;
+  width: 60px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  
+  background: #000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  content: "\e61f"
+  padding: 30px 0;
+  font-size: 22px;
+  font-family: 'icomoon'
+
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+#menu {
+	width:59px;
+	background-color: #202020;
+	overflow:auto;
+}
+
+.icon-dashboard2 ::before {
+	content: "\e61f";
+	margin-top: 75px;
+	margin-left: 20px;
+	font-family: 'icomoon'
+	color:#cccccc;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.icon-credit-card4 ::before {
+	content: "\e61e";
+	margin-top: 130px;
+	margin-left: 20px;
+	font-family: 'icomoon'
+	color:#cccccc;
+}
+
+.icon-group2 ::before {
+	content: "\e8d8";
+	margin-top: 190px;
+	margin-left: 20px;
+	font-family: 'icomoon'
+	color:#cccccc;
+}
